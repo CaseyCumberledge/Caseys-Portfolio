@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casey Cumberledge | IT, Cybersecurity & Software</title>
+  <meta name="description" content="Casey Cumberledge, IT and cybersecurity professional in Johnstown, PA. Network infrastructure, security, and custom software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/graph.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-blue"></div>
+    <div class="orb orb-violet"></div>
+    <div class="orb orb-pink"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#top" class="logo"><span class="logo-mark"></span>casey<span class="logo-dot">.</span>cumberledge</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav id="nav-menu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#certs" class="nav-link">Certs</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="btn btn-small" data-open-resume>Resume</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <canvas id="graph-canvas"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow mono"><span class="pulse"></span>NODE: CASEY_CUMBERLEDGE · STATUS: ONLINE · JOHNSTOWN, PA</p>
+      <h1>Every system here<br /><span class="grad">connects back to me.</span></h1>
+      <p class="hero-sub">IT and cybersecurity professional working across network infrastructure, security, and custom software. This page is my career mapped as a live network. Drag the nodes, or just scroll like a normal human.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-open-resume>Download Resume</button>
+        <a href="#experience" class="btn btn-ghost">Explore the map</a>
+      </div>
+    </div>
+    <div class="graph-panel" id="graph-panel">
+      <button class="panel-close" id="panel-close" aria-label="Close">&times;</button>
+      <p class="panel-type mono" id="panel-type"></p>
+      <h3 id="panel-title"></h3>
+      <p id="panel-desc"></p>
+      <a href="#" id="panel-link" class="panel-link mono"></a>
+    </div>
+    <div class="graph-legend mono">
+      <span><i class="dot dot-role"></i>roles</span>
+      <span><i class="dot dot-skill"></i>skills</span>
+      <span><i class="dot dot-cert"></i>certs</span>
+      <span><i class="dot dot-project"></i>projects</span>
+    </div>
+    <div class="scroll-hint mono">scroll ↓</div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/about</p>
+      <h2>The person behind the node</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/images/biophoto.jpg" alt="Casey Cumberledge" />
+        <div class="photo-tag mono">uptime: father of two · husband · builder</div>
+      </div>
+      <div class="about-text reveal">
+        <p>I'm Casey, an IT and cybersecurity professional in Johnstown, Pennsylvania, with a BS in Cybersecurity. My career sits where hardware meets software meets people: managing network infrastructure for military-contract manufacturing, supporting enterprise healthcare environments, keeping seven McDonald's locations online at once, and building custom software that makes operations measurably faster.</p>
+        <p>What sets me apart is range. I can harden a network in the morning, write Python automation in the afternoon, and walk a frustrated end user through a fix without making them feel dumb. I've supervised teams of 20+, mentored interns, and handled compliance for DOD contract work. I like systems that work, and I like being the reason they do.</p>
+        <p>Off the clock I'm a husband and a dad to two kids, an occasional baker, and a lifelong gamer, which is how I ended up shipping game projects and an esports platform on top of everything else.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label mono">years in IT</span></div>
+          <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label mono">certifications</span></div>
+          <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label mono">projects shipped</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/experience</p>
+      <h2>Career path, traced</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal" style="--accent:#4d7cfe">
+        <div class="timeline-node"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <svg class="tl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V9l5 3V9l5 3V8l6 4v8"/><path d="M7 16h.01M11 16h.01M16 16h.01"/></svg>
+            <p class="timeline-date mono">JAN 2023 - PRESENT</p>
+          </div>
+          <h3>Software Specialist</h3>
+          <p class="timeline-org">JWF Industries · Johnstown, PA</p>
+          <p>Developed and maintained custom software for military contracts, improving efficiency by 15%. Manage the IT helpdesk, networking, and end-user support while overseeing IT inventory and infrastructure. Designed IT and manufacturing software to streamline workflows, including the CIMCO MDC-Max 2025 machine monitoring rollout. Supervise, hire, and mentor annual interns, and handle ISO 27701 / DOD contract compliance.</p>
+          <div class="tags mono"><span>CIMCO MDC-Max</span><span>DOD Compliance</span><span>LogMeIn</span><span>Sophos</span><span>Virtual Machines</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="--accent:#9d6bff">
+        <div class="timeline-node"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <svg class="tl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M3 13a2 2 0 0 1 2-2h1v6H5a2 2 0 0 1-2-2v-2zM21 13a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2v-2z"/><path d="M19 17a3 3 0 0 1-3 3h-3"/></svg>
+            <p class="timeline-date mono">FEB 2022 - JAN 2023</p>
+          </div>
+          <h3>Technical Analyst</h3>
+          <p class="timeline-org">Qualfon · Johnstown, PA</p>
+          <p>Resolved Tier 1 through Tier 3 IT tickets, cutting resolution time by 20%. Oversaw call center network infrastructure for both onsite and remote staff supporting Highmark Blue Cross Blue Shield through VMware Horizon VDI. Improved team efficiency by 25% through optimized troubleshooting workflows.</p>
+          <div class="tags mono"><span>Tier 1-3 Support</span><span>VMware Horizon</span><span>VDI</span><span>Call Center Infra</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="--accent:#6fd4ff">
+        <div class="timeline-node"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <svg class="tl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 10l3 3 6-6"/></svg>
+            <p class="timeline-date mono">JAN 2021 - MAY 2022</p>
+          </div>
+          <h3>IT Network Technician</h3>
+          <p class="timeline-org">McDonald's · Johnstown, PA region</p>
+          <p>Managed IT systems across 7+ locations with 99% uptime. Secured and optimized POS systems and network infrastructure for high-volume restaurants where a down register means lost revenue by the minute.</p>
+          <div class="tags mono"><span>Multi-Site IT</span><span>POS Systems</span><span>Network Security</span><span>99% Uptime</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="--accent:#ff6bd6">
+        <div class="timeline-node"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <svg class="tl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg>
+            <p class="timeline-date mono">MAY 2018 - JUL 2021</p>
+          </div>
+          <h3>Operations Supervisor</h3>
+          <p class="timeline-org">Idlewild & SoakZone · Ligonier, PA</p>
+          <p>Supervised 20+ employees across operations, scheduling, and safety in a high-volume amusement park. Reduced operational errors by 30% and maintained 98% guest satisfaction. Leadership came before the tech career, and it still shows in how I run projects. Also carried mail for USPS as a seasonal city carrier through the 2021 peak season, because sitting still has never been my thing.</p>
+          <div class="tags mono"><span>Leadership</span><span>20+ Reports</span><span>Scheduling</span><span>Safety</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/projects</p>
+      <h2>Built and shipped</h2>
+    </div>
+    <div class="filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="software">Software</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="web">Websites</button>
+      <button class="filter-btn" data-filter="gamedev">Game Dev</button>
+    </div>
+    <div class="project-grid">
+
+      <article class="project-card reveal" data-type="software" style="--accent:#4d7cfe">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-replen" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#142253"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-replen)"/>
+            <g stroke="#243a7a" stroke-width="1">
+              <path d="M0 30h400M0 60h400M0 90h400M0 120h400M60 0v150M130 0v150M200 0v150M270 0v150M340 0v150"/>
+            </g>
+            <g>
+              <rect x="80" y="92" width="26" height="38" rx="3" fill="#4d7cfe" opacity="0.55"/>
+              <rect x="118" y="74" width="26" height="56" rx="3" fill="#4d7cfe" opacity="0.75"/>
+              <rect x="156" y="56" width="26" height="74" rx="3" fill="#6f8fff" opacity="0.9"/>
+              <rect x="194" y="38" width="26" height="92" rx="3" fill="#9d6bff"/>
+            </g>
+            <path d="M86 84 L124 64 L162 46 L204 26" stroke="#6fd4ff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="204" cy="26" r="5" fill="#6fd4ff"/>
+            <g transform="translate(282,40)">
+              <path d="M0 14 L24 0 L48 14 L48 44 L24 58 L0 44 Z" fill="none" stroke="#9d6bff" stroke-width="2"/>
+              <path d="M0 14 L24 28 L48 14 M24 28 V58" fill="none" stroke="#9d6bff" stroke-width="2"/>
+            </g>
+            <text x="252" y="120" font-family="JetBrains Mono, monospace" font-size="11" fill="#6fd4ff">reorder: 142 units</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Replen</h3>
+            <span class="tag-pill mono software">SOFTWARE</span>
+          </div>
+          <p class="project-co mono">Codite Solutions · codite.com</p>
+          <p>Purchasing intelligence platform sold as an Excel add-in and standalone web app. Parses messy ERP exports from SAP, NetSuite, QuickBooks, Fishbowl and more, then forecasts demand and tells purchasing teams what to reorder and when. Supabase auth, seat-based team licensing, live paying customers.</p>
+          <div class="tags mono"><span>JavaScript</span><span>Office JS</span><span>Supabase</span><span>Forecasting</span></div>
+          <a href="https://codite.com" target="_blank" rel="noopener" class="project-link mono">visit codite.com →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="software" style="--accent:#9d6bff">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-cimco" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#23164e"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-cimco)"/>
+            <path d="M0 150 V96 l34-18 v18 l34-18 v18 l34-18 V150 Z" fill="#1a2350"/>
+            <rect x="150" y="70" width="60" height="80" rx="4" fill="#1f2a5e"/>
+            <rect x="160" y="82" width="40" height="22" rx="3" fill="#0c1228" stroke="#4d7cfe" stroke-width="1.5"/>
+            <path d="M164 96 l6-7 5 4 7-9 6 6 7-8" stroke="#6fd4ff" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="166" y="114" width="8" height="8" rx="2" fill="#9d6bff"/>
+            <rect x="180" y="114" width="8" height="8" rx="2" fill="#4d7cfe"/>
+            <rect x="194" y="114" width="8" height="8" rx="2" fill="#ff6bd6"/>
+            <g stroke="#9d6bff" stroke-width="2" fill="none" stroke-linecap="round">
+              <path d="M236 110 q14 0 14-14"/>
+              <path d="M236 98 q26 0 26-26" opacity="0.7"/>
+              <path d="M236 86 q38 0 38-38" opacity="0.45"/>
+            </g>
+            <circle cx="320" cy="44" r="14" fill="none" stroke="#9d6bff" stroke-width="2"/>
+            <circle cx="320" cy="44" r="5" fill="#9d6bff"/>
+            <text x="258" y="120" font-family="JetBrains Mono, monospace" font-size="11" fill="#9d6bff">cnc-07: running</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>CIMCO MDC-Max Implementation</h3>
+            <span class="tag-pill mono software">SOFTWARE</span>
+          </div>
+          <p class="project-co mono">JWF Industries</p>
+          <p>Full implementation of machine data collection across a military-contract fabrication shop. Connected CNC machines to live monitoring, giving management real production data instead of guesswork. Hardware, networking, software config, and operator training, end to end.</p>
+          <div class="tags mono"><span>CIMCO</span><span>Industrial IoT</span><span>Networking</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="security" style="--accent:#ff6bd6">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-pentest" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3a1140"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-pentest)"/>
+            <rect x="40" y="28" width="180" height="100" rx="8" fill="#0c1228" stroke="#ff6bd6" stroke-width="1.5"/>
+            <circle cx="56" cy="42" r="3.5" fill="#ff6bd6"/><circle cx="68" cy="42" r="3.5" fill="#9d6bff"/><circle cx="80" cy="42" r="3.5" fill="#4d7cfe"/>
+            <g font-family="JetBrains Mono, monospace" font-size="11">
+              <text x="54" y="68" fill="#6fd4ff">$ nmap -sV target</text>
+              <text x="54" y="86" fill="#97a0c3">PORT&#160;&#160;&#160;STATE&#160;&#160;SERVICE</text>
+              <text x="54" y="104" fill="#ff6bd6">22/tcp open&#160;&#160;&#160;ssh</text>
+            </g>
+            <path d="M300 30 l34 12 v26 c0 24 -14 40 -34 50 c-20 -10 -34 -26 -34 -50 v-26 Z" fill="none" stroke="#ff6bd6" stroke-width="2.5"/>
+            <path d="M286 76 l10 10 20 -22" stroke="#6fd4ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Penetration Testing Labs</h3>
+            <span class="tag-pill mono security">SECURITY</span>
+          </div>
+          <p class="project-co mono">Independent · CEH coursework and beyond</p>
+          <p>Built and ran offensive security labs simulating real-world attack vectors: reconnaissance, exploitation, privilege escalation, and reporting. Kali Linux, Metasploit, Wireshark, Nmap, and Burp Suite against intentionally vulnerable environments.</p>
+          <div class="tags mono"><span>Kali Linux</span><span>Metasploit</span><span>Wireshark</span><span>Nmap</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="gamedev" style="--accent:#6fd4ff">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-frost" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0d2b4e"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-frost)"/>
+            <g stroke="#6fd4ff" stroke-width="2.5" stroke-linecap="round" transform="translate(110,75)">
+              <path d="M0 -40 V40 M-34 -20 L34 20 M-34 20 L34 -20"/>
+              <path d="M0 -40 l-8 -8 M0 -40 l8 -8 M0 40 l-8 8 M0 40 l8 8"/>
+              <path d="M-34 -20 l-11 -2 M-34 -20 l-2 -11 M34 20 l11 2 M34 20 l2 11"/>
+              <path d="M-34 20 l-11 2 M-34 20 l-2 11 M34 -20 l11 -2 M34 -20 l2 -11"/>
+            </g>
+            <g stroke="#4d7cfe" stroke-width="2" fill="none">
+              <path d="M220 40 h36 v22 h36 M220 76 h36 v-14 M220 112 h36 v-22 h36 M292 62 h36 v14 h-0"/>
+            </g>
+            <circle cx="216" cy="40" r="4" fill="#6fd4ff"/>
+            <circle cx="216" cy="76" r="4" fill="#6fd4ff"/>
+            <circle cx="216" cy="112" r="4" fill="#6fd4ff"/>
+            <path d="M330 60 h22 v10 c0 8 -5 13 -11 13 s-11 -5 -11 -13 Z" fill="#9d6bff"/>
+            <path d="M336 83 h10 v6 h6 v5 h-22 v-5 h6 Z" fill="#9d6bff" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>PlayFrostbyte</h3>
+            <span class="tag-pill mono gamedev">GAME DEV</span>
+          </div>
+          <p class="project-co mono">Frostbyte Studios</p>
+          <p>Roblox esports platform with tournament systems, leaderboards, team branding, and match queueing. Built with Next.js, TypeScript, Tailwind, Supabase, and Prisma. A full production web app, not a weekend toy.</p>
+          <div class="tags mono"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Prisma</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="gamedev" style="--accent:#9d6bff">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-level" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1d1650"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-level)"/>
+            <g transform="translate(200,30)">
+              <g>
+                <path d="M0 60 l-44 -22 44 -22 44 22 Z" fill="#1f2a5e"/>
+                <path d="M-44 38 v26 l44 22 v-26 Z" fill="#141c44"/>
+                <path d="M44 38 v26 l-44 22 v-26 Z" fill="#2a3a7e"/>
+              </g>
+              <g transform="translate(-44,-22)">
+                <path d="M0 38 l-22 -11 22 -11 22 11 Z" fill="#4d7cfe"/>
+                <path d="M-22 27 v13 l22 11 v-13 Z" fill="#3258c4"/>
+                <path d="M22 27 v13 l-22 11 v-13 Z" fill="#6f8fff"/>
+              </g>
+              <g transform="translate(44,-22)">
+                <path d="M0 38 l-22 -11 22 -11 22 11 Z" fill="#9d6bff"/>
+                <path d="M-22 27 v13 l22 11 v-13 Z" fill="#7445d8"/>
+                <path d="M22 27 v13 l-22 11 v-13 Z" fill="#b78dff"/>
+              </g>
+              <g transform="translate(0,-44)">
+                <path d="M0 38 l-22 -11 22 -11 22 11 Z" fill="#ff6bd6"/>
+                <path d="M-22 27 v13 l22 11 v-13 Z" fill="#cc4aa8"/>
+                <path d="M22 27 v13 l-22 11 v-13 Z" fill="#ff96e2"/>
+              </g>
+            </g>
+            <text x="48" y="124" font-family="JetBrains Mono, monospace" font-size="11" fill="#9d6bff">brush count: 1,204</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Level Design & Mods</h3>
+            <span class="tag-pill mono gamedev">GAME DEV</span>
+          </div>
+          <p class="project-co mono">Roblox Studio · Source Engine</p>
+          <p>Maps, mods, and community content including TTT packs and custom environments built in Roblox Studio and Hammer. Game development taught me iteration speed and how to ship things people actually use for fun.</p>
+          <div class="tags mono"><span>Roblox Studio</span><span>Source Engine</span><span>Hammer</span><span>Lua</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="web" style="--accent:#6fd4ff">
+        <div class="project-art project-art-img">
+          <img src="assets/images/ewl1.png" alt="Explore With Lacey website" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Explore With Lacey</h3>
+            <span class="tag-pill mono web">WEBSITE</span>
+          </div>
+          <p class="project-co mono">2025 · Travel agency</p>
+          <p>Full travel agency website with booking inquiries and destination showcases. WordPress with custom HTML, JavaScript, jQuery, and CSS.</p>
+          <div class="tags mono"><span>WordPress</span><span>jQuery</span><span>JavaScript</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="web" style="--accent:#4d7cfe">
+        <div class="project-art project-art-img">
+          <img src="assets/images/ens1.png" alt="Eat&Sleep website" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Eat&Sleep</h3>
+            <span class="tag-pill mono web">WEBSITE</span>
+          </div>
+          <p class="project-co mono">2023 · Restaurant blog</p>
+          <p>Local restaurant blog with reviews and recommendations, hand-built with HTML, JavaScript, and CSS. No framework, no page builder, just clean code.</p>
+          <div class="tags mono"><span>HTML</span><span>JavaScript</span><span>CSS</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="web" style="--accent:#9d6bff">
+        <div class="project-art project-art-img">
+          <img src="assets/images/bi1.png" alt="Brett Insurance website" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Brett Insurance</h3>
+            <span class="tag-pill mono web">WEBSITE</span>
+          </div>
+          <p class="project-co mono">2021 · Insurance agency</p>
+          <p>Professional insurance agency site with quote requests and service pages. WordPress with custom HTML, JavaScript, jQuery, and CSS.</p>
+          <div class="tags mono"><span>WordPress</span><span>jQuery</span><span>CSS</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="web" style="--accent:#ff6bd6">
+        <div class="project-art project-art-img">
+          <img src="assets/images/dudekin1.png" alt="Dudek Insurance website" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Dudek Insurance</h3>
+            <span class="tag-pill mono web">WEBSITE</span>
+          </div>
+          <p class="project-co mono">2017 · Insurance agency</p>
+          <p>Fully functional insurance site and my first client build, written from scratch in HTML, JavaScript, and CSS. Where the web work started.</p>
+          <div class="tags mono"><span>HTML</span><span>JavaScript</span><span>CSS</span></div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-type="software" style="--accent:#4d7cfe">
+        <div class="project-art">
+          <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g-shopify" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#122a48"/><stop offset="1" stop-color="#0c1228"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="150" fill="url(#g-shopify)"/>
+            <rect x="50" y="34" width="150" height="96" rx="8" fill="#0c1228" stroke="#4d7cfe" stroke-width="1.5"/>
+            <rect x="50" y="34" width="150" height="20" rx="8" fill="#1a2350"/>
+            <circle cx="64" cy="44" r="3" fill="#ff6bd6"/><circle cx="75" cy="44" r="3" fill="#9d6bff"/><circle cx="86" cy="44" r="3" fill="#6fd4ff"/>
+            <rect x="64" y="66" width="54" height="36" rx="4" fill="#1f2a5e"/>
+            <rect x="128" y="66" width="58" height="7" rx="3" fill="#4d7cfe" opacity="0.8"/>
+            <rect x="128" y="80" width="44" height="7" rx="3" fill="#4d7cfe" opacity="0.5"/>
+            <rect x="64" y="110" width="60" height="12" rx="6" fill="#9d6bff"/>
+            <g transform="translate(264,52)">
+              <path d="M10 14 h44 l-6 34 h-32 Z" fill="none" stroke="#6fd4ff" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M18 14 c0 -10 28 -10 28 0" fill="none" stroke="#6fd4ff" stroke-width="2.5"/>
+              <circle cx="22" cy="58" r="4" fill="#6fd4ff"/>
+              <circle cx="46" cy="58" r="4" fill="#6fd4ff"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Shopify Development</h3>
+            <span class="tag-pill mono software">SOFTWARE</span>
+          </div>
+          <p class="project-co mono">Freelance</p>
+          <p>Custom storefront work for small businesses: theme customization, app integration, and fixing the things agencies quoted four figures for. Practical web development with real clients and real deadlines.</p>
+          <div class="tags mono"><span>Shopify</span><span>Liquid</span><span>JavaScript</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/skills</p>
+      <h2>The toolkit</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal" style="--accent:#4d7cfe">
+        <div class="skill-head">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 l8 4 v6 c0 5 -3.5 8.5 -8 10 c-4.5 -1.5 -8 -5 -8 -10 V6 Z"/></svg>
+          <h3>Cybersecurity & IT</h3>
+        </div>
+        <div class="tags mono"><span>Network Infrastructure</span><span>Tier 1-3 Support</span><span>Active Directory</span><span>ISO 27701 / DOD Compliance</span><span>Incident Management</span><span>Security Monitoring</span><span>Windows</span><span>Debian</span><span>Ubuntu</span><span>iOS</span></div>
+      </div>
+      <div class="skill-group reveal" style="--accent:#9d6bff">
+        <div class="skill-head">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 L2 12 l6 6 M16 6 l6 6 -6 6 M13 4 l-2 16"/></svg>
+          <h3>Programming</h3>
+        </div>
+        <div class="tags mono"><span>Python</span><span>Java</span><span>C++</span><span>SQL</span><span>HTML</span><span>PHP</span><span>Lua</span><span>PowerShell</span><span>Bash</span><span>JavaScript</span></div>
+      </div>
+      <div class="skill-group reveal" style="--accent:#6fd4ff">
+        <div class="skill-head">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7 a5 5 0 1 0 -7 7 l-4 4 v3 h3 l4 -4 a5 5 0 0 0 7 -7 Z"/><circle cx="16" cy="8" r="1.5"/></svg>
+          <h3>Tools & Platforms</h3>
+        </div>
+        <div class="tags mono"><span>AWS</span><span>Sophos</span><span>SentinelOne</span><span>BeyondTrust</span><span>ServiceNow</span><span>Wireshark</span><span>Splunk</span><span>Nmap</span><span>Git</span><span>Bitbucket</span><span>FreshService</span><span>Bitdefender</span></div>
+      </div>
+      <div class="skill-group reveal" style="--accent:#ff6bd6">
+        <div class="skill-head">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20 c0 -4 3 -6.5 6.5 -6.5 s6.5 2.5 6.5 6.5"/><path d="M16 4 a4.5 4.5 0 0 1 0 8 M18.5 20 c0 -3 -1.4 -5 -3.5 -6"/></svg>
+          <h3>Management & Support</h3>
+        </div>
+        <div class="tags mono"><span>IT Inventory</span><span>Leadership & Mentorship</span><span>Business Negotiation</span><span>Cloud Solutions</span><span>Government Compliance</span><span>Project Management</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certs">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/certifications</p>
+      <h2>Verified credentials</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal" style="--accent:#ff5a5a">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 L7 22 l5 -3 5 3 -2 -7.5"/></svg>
+        <p class="cert-year mono">2025</p>
+        <h3>Certified Ethical Hacker</h3>
+        <p>EC-Council</p>
+      </div>
+      <div class="cert-card reveal" style="--accent:#ff6b6b">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 l8 4 v6 c0 5 -3.5 8.5 -8 10 c-4.5 -1.5 -8 -5 -8 -10 V6 Z"/><path d="M9 12 l2 2 4 -4"/></svg>
+        <p class="cert-year mono">2025</p>
+        <h3>CompTIA Security+</h3>
+        <p>CompTIA</p>
+      </div>
+      <div class="cert-card reveal" style="--accent:#4d7cfe">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="6" rx="1.5"/><rect x="2" y="16" width="6" height="6" rx="1.5"/><rect x="16" y="16" width="6" height="6" rx="1.5"/><path d="M12 8 v4 M5 16 l7 -4 7 4"/></svg>
+        <p class="cert-year mono">2023</p>
+        <h3>CompTIA Network+</h3>
+        <p>CompTIA</p>
+      </div>
+      <div class="cert-card reveal" style="--accent:#9d6bff">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21 h8 M12 17 v4 M7 9 l2.5 2.5 L7 14 M12 14 h5"/></svg>
+        <p class="cert-year mono">2023</p>
+        <h3>Certified Secure Computer User</h3>
+        <p>EC-Council</p>
+      </div>
+      <div class="cert-card reveal" style="--accent:#6fd4ff">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 v5 l3.5 2"/></svg>
+        <p class="cert-year mono">2022</p>
+        <h3>Google IT Support Professional</h3>
+        <p>Google</p>
+      </div>
+      <div class="cert-card reveal" style="--accent:#ffa94d">
+        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 l2.5 5 5.5 .8 -4 3.9 1 5.6 -5 -2.7 -5 2.7 1 -5.6 -4 -3.9 5.5 -.8 Z"/></svg>
+        <p class="cert-year mono">2022</p>
+        <h3>CompTIA IT Fundamentals</h3>
+        <p>CompTIA</p>
+      </div>
+    </div>
+    <div class="edu-row reveal">
+      <div class="edu-item edu-uop">
+        <div class="edu-content">
+          <p class="mono edu-label">B.S. CYBERSECURITY · FEB 2026</p>
+          <p class="edu-school">University of Phoenix</p>
+          <p class="edu-extra">26 completed cybersecurity and IT courses, from network defense to digital forensics, plus NSLS leadership training.</p>
+        </div>
+      </div>
+      <div class="edu-item edu-ph">
+        <div class="edu-content">
+          <p class="mono edu-label">A.A. CRIMINOLOGY & PSYCHOLOGY · DEC 2019</p>
+          <p class="edu-school">Penn Highlands Community College</p>
+          <p class="edu-extra">Understanding how people think before learning how systems break. It comes in handy more than you'd expect in security work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">~/contact</p>
+      <h2>Open a connection</h2>
+      <p class="contact-sub">Hiring, collaborating, or just want to talk shop, my inbox is open.</p>
+    </div>
+    <div class="contact-grid">
+      <form action="https://formspree.io/f/xanpwjqe" method="POST" class="contact-form reveal">
+        <label class="mono" for="cf-name">NAME</label>
+        <input id="cf-name" type="text" name="name" placeholder="Your name" required />
+        <label class="mono" for="cf-email">EMAIL</label>
+        <input id="cf-email" type="email" name="_replyto" placeholder="you@company.com" required />
+        <label class="mono" for="cf-msg">MESSAGE</label>
+        <textarea id="cf-msg" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+      <div class="contact-side reveal">
+        <a href="mailto:cumberledgecasey@gmail.com" class="contact-card">
+          <span class="mono contact-label">EMAIL</span>
+          <span>cumberledgecasey@gmail.com</span>
+        </a>
+        <a href="tel:8142428295" class="contact-card">
+          <span class="mono contact-label">PHONE</span>
+          <span>814-242-8295</span>
+        </a>
+        <a href="https://github.com/caseycumberledge" target="_blank" rel="noopener" class="contact-card">
+          <span class="mono contact-label">GITHUB</span>
+          <span>github.com/caseycumberledge</span>
+        </a>
+        <a href="https://www.linkedin.com/in/casey-cumberledge-86a83b270/" target="_blank" rel="noopener" class="contact-card">
+          <span class="mono contact-label">LINKEDIN</span>
+          <span>casey-cumberledge</span>
+        </a>
+        <button class="contact-card contact-card-btn" data-open-resume>
+          <span class="mono contact-label">RESUME</span>
+          <span>Download PDF →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div id="resume-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="close-resume-modal" aria-label="Close">&times;</button>
+      <p class="eyebrow mono">SELECT BUILD</p>
+      <h2>Download Resume</h2>
+      <div class="modal-buttons">
+        <a href="assets/resumes/Casey A. Cumberledge — Master Resume.pdf" download class="modal-btn"><span class="mono">FULL</span>Master Resume</a>
+        <a href="assets/resumes/Casey A. Cumberledge — IT Resume.pdf" download class="modal-btn"><span class="mono">IT</span>IT & Infrastructure</a>
+        <a href="assets/resumes/Casey A. Cumberledge — Cybersecurity Resume.pdf" download class="modal-btn"><span class="mono">SEC</span>Cybersecurity</a>
+        <a href="assets/resumes/Casey A. Cumberledge — Game Development Resume.pdf" download class="modal-btn"><span class="mono">GAME</span>Game Development</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="mono">© 2026 CASEY CUMBERLEDGE · CONNECTION CLOSED GRACEFULLY</p>
+  </footer>
+
+</body>
+</html>
